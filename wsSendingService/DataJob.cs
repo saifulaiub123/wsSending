@@ -98,7 +98,7 @@ namespace wsSendingService
         {
             using (var connection = new SqlConnection(connectionString))
             {
-                var sql = $"UPDATE Queue Set Sent= 1, SentDate={DateTime.Now} WHERE Id = {id}";
+                var sql = $"UPDATE Queue Set Sent= 1, SentDate='{DateTime.Now.ToString("MM/dd/yyyy")}' WHERE Id = {id}";
                 await connection.OpenAsync();
 
                 var result = await connection.ExecuteAsync(sql);
