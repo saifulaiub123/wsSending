@@ -1,5 +1,7 @@
 ﻿using Quartz;
 using Quartz.Impl;
+using System;
+using System.Configuration;
 using System.ServiceProcess;
 using System.Threading.Tasks;
 
@@ -33,7 +35,8 @@ namespace wsSendingService
 
         private async Task StartScheduler()
         {
-            // Create a new instance of the Quartz scheduler
+            int timerInterval = Convert.ToInt32(ConfigurationManager.AppSettings["TimerInterval"]);
+
             scheduler = await new StdSchedulerFactory().GetScheduler();
 
             // Start the scheduler
@@ -47,7 +50,7 @@ namespace wsSendingService
                 .WithIdentity("InsertDataTrigger", "Group1")
                 .StartNow()
                 .WithSimpleSchedule(x => x
-                    .WithIntervalInSeconds(5)
+                    .WithIntervalInSeconds(timerInterval)
                     .RepeatForever())
                 .Build();
 
