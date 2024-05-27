@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 
 
-namespace wsSendingService.DbModel
+namespace WhatsAppSender.DbModel
 {
     [Table("Settings")]
     public class Settings

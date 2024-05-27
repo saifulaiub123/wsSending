@@ -1,4 +1,4 @@
-﻿namespace wsSendingService
+﻿namespace MyFirstService
 {
     partial class ProjectInstaller
     {
@@ -39,8 +39,8 @@
             // 
             // serviceInstaller1
             // 
-            this.serviceInstaller1.Description = "Service demo";
-            this.serviceInstaller1.DisplayName = "wsSending_3";
+            this.serviceInstaller1.Description = "Whatsapp sender";
+            this.serviceInstaller1.DisplayName = "WhatsAppSender";
             this.serviceInstaller1.ServiceName = "Service1";
             // 
             // ProjectInstaller

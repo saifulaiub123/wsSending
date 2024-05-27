@@ -1,4 +1,4 @@
-﻿namespace wsSendingService
+﻿namespace WhatsAppSender
 {
     partial class Service1
     {
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            this.ServiceName = "wsSending1";
+            this.ServiceName = "Service1";
         }
 
         #endregion

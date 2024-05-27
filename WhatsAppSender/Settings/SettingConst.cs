@@ -1,5 +1,5 @@
 ﻿
-namespace wsSendingService.Settings
+namespace WhatsAppSender.Settings
 {
     public static class SettingConst
     {

@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace wsSendingService.DbModel
+namespace WhatsAppSender.DbModel
 {
     [Table("Queue")]
     public class Queue
